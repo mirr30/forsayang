@@ -1,0 +1,32 @@
+/* letter.css */
+#letter {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly off-white */
+    color: #0b1522; /* Dark text for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+}
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+#show-letter {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f20044; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#show-letter:hover {
+    background-color: #d1003f; /* Darker shade on hover */
+}

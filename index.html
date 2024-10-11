@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="letter.css">
+    <title>For Sayang</title>
+</head>
+<body>
+    <div class="heart"></div>
+    <h1 class="wish">Happy National Mental Health Day Sayang!</h1>
+    
+    <!-- Button to Show Letter -->
+    <button id="show-letter">Show Letter</button>
+    
+    <!-- Hidden Letter -->
+    <div id="letter" class="hidden">
+        <p>
+            My Dearest,
+            <br><br>
+            Happy National Mental Health Day sayang, Glad to see you're still here sayang. I am so proud of you for keep survive until now.  I want to take a moment to remind you how incredibly important you are to me. Saya tau berat bagi sayang untuk keep breathing everyday, but you made it sayang, I'm so proud of you baby. I want you to know that I am here for you through every up and down. I cherish every moment we share, even from afar.
+            <br><br>
+            Remember to take care of yourself and prioritize your well-being sayang. It's okay to reach out, share your feelings, and take the time you need to recharge. You are loved and you are never alone sayang. Ingat saya sentiasa ada dekat dengan awak, saya sayang awak dan saya takkan tinggalkan awak. Seing you smile has inspired me to keep living in this world. Thanks for being the reason I'm here, sayang.
+            <br><br>
+            I look forward to many more moments together, celebrating life and supporting each other. Always keep shining permataku yang terindah.
+            <br><br>
+            With all my love,
+            <br>
+            Amir (baby awak yang comel)
+        </p>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="penjagahati.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // JavaScript to toggle letter visibility and play music
+        const showButton = document.getElementById('show-letter');
+        const letter = document.getElementById('letter');
+        const backgroundMusic = document.getElementById('background-music');
+
+        showButton.addEventListener('click', () => {
+            letter.classList.toggle('hidden');
+            // Play music when the button is clicked
+            backgroundMusic.play().catch(error => {
+                console.log('Autoplay failed:', error);
+            });
+        });
+
+        // Load event to set volume to 0 initially (optional)
+        window.addEventListener('load', () => {
+            backgroundMusic.volume = 0.5; // Set volume to a reasonable level
+        });
+    </script>
+</body>
+</html>
